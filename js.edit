@@ -1,0 +1,41 @@
+$(function (){
+    if ($("[id$='hidMain']").val() != "--請選擇--" )
+    {
+        //$("[id$='imgbtn_detail_next']").hide();
+        $('[id$=ddlMain] :selected').text($("[id$='hidMain']").val());
+        //$("[id$='ddlSub']").val($("[id$='hidSubid_']").val());
+    }
+    else
+    {
+        $('[id$=ddlMain] :selected').text("--請選擇--");
+
+    }
+});
+
+$(function (){
+    if ($("[id$='hidSub_']").val() != "--請選擇--" )
+    {
+        //$("[id$='imgbtn_detail_next']").hide();
+        $('[id$=ddlSub] :selected').text($("[id$='hidSub_']").val());
+        //$("[id$='ddlSub']").val($("[id$='hidSubid_']").val());
+    }
+    else
+    {
+        $('[id$=ddlSub] :selected').text("--請選擇--");
+
+    }
+});
+
+$(function (){
+    if ($("[id$='hidZone']").val() != "--請選擇--" )
+    {
+        //$("[id$='imgbtn_detail_next']").hide();
+        $('[id$=addressCC] :selected').text($("[id$='hidZone']").val());
+        //$("[id$='ddlSub']").val($("[id$='hidSubid_']").val());
+    }
+    else
+    {
+        $('[id$=addressCC] :selected').text("--請選擇--");
+
+    }
+});
